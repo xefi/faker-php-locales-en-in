@@ -1,0 +1,45 @@
+{
+  "name": "xefi/faker-php-locales-en-in",
+  "type": "library",
+  "description": "Faker extension to include en_IN locale",
+  "keywords": [
+    "faker",
+    "data",
+    "en",
+    "in"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martin Soenen"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "psr/container": "^2.0",
+    "xefi/faker-php": "^1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xefi\\Faker\\EnIn\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Xefi\\Faker\\EnIn\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "faker": {
+      "providers": [
+        "Xefi\\Faker\\EnIn\\FakerEnInServiceProvider"
+      ]
+    }
+  }
+}
