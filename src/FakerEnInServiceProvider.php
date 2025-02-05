@@ -4,6 +4,7 @@ namespace Xefi\Faker\EnIn;
 
 use Xefi\Faker\EnIn\Extensions\AddressExtension;
 use Xefi\Faker\EnIn\Extensions\ColorsExtension;
+use Xefi\Faker\EnIn\Extensions\CompanyExtension;
 use Xefi\Faker\Providers\Provider;
 
 class FakerEnInServiceProvider extends Provider
@@ -13,6 +14,7 @@ class FakerEnInServiceProvider extends Provider
         $this->extensions([
             AddressExtension::class,
             ColorsExtension::class,
+            CompanyExtension::class,
         ]);
     }
 }
