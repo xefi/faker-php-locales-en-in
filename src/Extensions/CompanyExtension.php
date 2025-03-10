@@ -32,7 +32,7 @@ class CompanyExtension extends Extension
             $this->randomizer->getInt(1, 9999),
             $this->randomizer->getBytesFromString(implode(range('A', 'Z')), 1)
         );
-        $entityCode = $this->randomizer->getBytesFromString('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', 1); // Code d'entité
+        $entityCode = $this->randomizer->getBytesFromString('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', 1);
         $suffix = $this->randomizer->getInt(0, 9);
 
         return sprintf('%s%s%sZ%s', $stateCode, $pan, $entityCode, $suffix);
