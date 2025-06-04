@@ -6,6 +6,11 @@ use Xefi\Faker\Extensions\Extension;
 
 class AddressExtension extends Extension
 {
+    public function getLocale(): string|null
+    {
+        return 'en_IN';
+    }
+
     protected $states = [
         'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat', 'Haryana',
         'Himachal Pradesh', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur',

@@ -6,6 +6,11 @@ use Xefi\Faker\Extensions\Extension;
 
 class CompanyExtension extends Extension
 {
+    public function getLocale(): string|null
+    {
+        return 'en_IN';
+    }
+
     private array $companies = [
         "Tata Industries", "Reliance Group", "Infosys Technologies",
         "Wipro Solutions", "Mahindra & Mahindra", "Adani Enterprises",
