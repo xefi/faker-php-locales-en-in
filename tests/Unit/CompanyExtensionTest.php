@@ -21,10 +21,8 @@ final class CompanyExtensionTest extends TestCase
 
     public function testGstin()
     {
-        $faker = new Container(false);
-
         for ($i = 0; $i < 1000; $i++) {
-            $result = $faker->gstin();
+            $result = $this->faker->gstin();
 
             $this->assertMatchesRegularExpression('/^\d{2}[A-Z]{5}\d{4}[A-Z][A-Z\d][Z][A-Z\d]$/', $result);
         }
